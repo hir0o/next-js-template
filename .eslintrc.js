@@ -5,6 +5,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
+    'next',
     'airbnb',
     'airbnb/hooks',
     'plugin:import/errors',
@@ -59,6 +60,15 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'import/prefer-default-export': 0,
     'react/prop-types': 0,
+    'no-void': 0,
+    '@typescript-eslint/no-misused-promises': [
+      'error',
+      {
+        checksVoidReturn: {
+          attributes: false,
+        },
+      },
+    ],
   },
   ignorePatterns: ['.eslintrc.*', 'vite.config.*'],
 }
