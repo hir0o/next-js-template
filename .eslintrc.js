@@ -70,5 +70,5 @@ module.exports = {
       },
     ],
   },
-  ignorePatterns: ['.eslintrc.*', 'vite.config.*'],
+  ignorePatterns: ['.eslintrc.*', '*.config.*'],
 }
