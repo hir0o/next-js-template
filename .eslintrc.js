@@ -60,6 +60,7 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'import/prefer-default-export': 0,
     'react/prop-types': 0,
+    'react/require-default-props': 0,
     'no-void': 0,
     '@typescript-eslint/no-misused-promises': [
       'error',
@@ -69,6 +70,20 @@ module.exports = {
         },
       },
     ],
+    'no-arrow-body': 0,
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          '**/*.spec.tsx',
+          '**/*.spec.ts',
+          '**/*.test.tsx',
+          '**/*.test.ts',
+          'jest.setup.js',
+        ],
+      },
+    ],
   },
+
   ignorePatterns: ['.eslintrc.*', '*.config.*'],
 }

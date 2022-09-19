@@ -1,1 +1,7 @@
-export default () => <h1>hello</h1>
+import { FizzBuzz } from '@/components/FizzBuzz'
+
+export default () => (
+  <div>
+    <FizzBuzz />
+  </div>
+)
